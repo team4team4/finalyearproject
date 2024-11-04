@@ -10,8 +10,7 @@ model = Model("./vosk-model-small-en-in-0.4/")  # Replace with your model path
 recognizer = KaldiRecognizer(model, 16000)
 
 nlp = spacy.load("en_core_web_sm")
-
-# Define command templates
+t
 commands = {
     "open_file": "xdg-open {file_name}",
     "list_directory": "ls {directory}",
